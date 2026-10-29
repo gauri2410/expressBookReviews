@@ -1,3 +1,10 @@
-Command: git remote -v
-Output: Add the GitHub fork/repository remote here before submission, then run:
-git remote -v
+Command:
+curl -s https://api.github.com/repos/YOUR_GITHUB_USERNAME/expressBookReview
+
+Output:
+Replace YOUR_GITHUB_USERNAME with your GitHub username after creating/forking the repository.
+The response must include:
+"fork": true,
+"parent": {
+  "full_name": "ibm-developer-skills-network/expressBookReview"
+}
